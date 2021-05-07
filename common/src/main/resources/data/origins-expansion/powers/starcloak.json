@@ -1,0 +1,32 @@
+{
+	"type": "origins:multiple",
+	"toggle": {
+		"type": "origins:toggle",
+		"active_by_default": false,
+		"key": {
+			"key": "key.origins.secondary_active"
+		}
+	},
+	"shield": {
+		"type": "origins-expansion:resource_shield",
+		"resource": "origins-expansion:moonlight",
+		"efficiency": 0.025,
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins-expansion:starcloak_toggle"
+		}
+	},
+	"upkeep": {
+		"type": "origins:action_over_time",
+		"interval": 4,
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "origins-expansion:moonlight",
+			"change": -1
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "origins-expansion:starcloak_toggle"
+		}
+	}
+}

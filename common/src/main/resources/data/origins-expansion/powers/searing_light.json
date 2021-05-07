@@ -1,0 +1,44 @@
+{
+	"type": "origins:active_self",
+	"cooldown": 100,
+	"hud_render": {
+		"should_render": false
+	},
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins-expansion:area_of_effect",
+				"range": 10,
+				"action": {
+					"type": "origins-expansion:damage",
+					"amount": {
+						"type": "origins-expansion:product",
+						"values": [
+							{
+								"type": "origins-expansion:brightness"
+							},
+							10
+						]
+					},
+					"source": {
+						"name": "onFire",
+						"fire": true,
+						"bypasses_armor": true
+					}
+				}
+			},
+			{
+				"type": "origins:change_resource",
+				"resource": "origins-expansion:moonlight",
+				"change": -100
+			}
+		]
+	},
+	"condtion": {
+		"type": "origins:resource",
+		"resource": "origins-expansion:moonlight",
+		"comparison": ">=",
+		"compare_to": 100
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 20,
+	"entity_action": {
+		"type": "origins:apply_effect",
+		"effect": {
+			"effect": "minecraft:weakness",
+			"duration": 100,
+			"amplifier": 0
+		}
+	},
+	"condition": {
+		"type": "origins:resource",
+		"resource": "origins-expansion:moonlight",
+		"comparison": "<=",
+		"compare_to": 400
+	}
+}

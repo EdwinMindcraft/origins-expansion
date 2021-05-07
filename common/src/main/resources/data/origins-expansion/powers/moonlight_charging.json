@@ -1,0 +1,21 @@
+{
+	"type": "origins:action_over_time",
+	"interval": 2,
+	"entity_action": {
+		"type": "origins:change_resource",
+		"resource": "origins-expansion:moonlight",
+		"change": 1
+	},
+	"condition": {
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:exposed_to_sky"
+			},
+			{
+				"type": "origins:daytime",
+				"inverted": true
+			}
+		]
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"origins-expansion:brittle",
+		"origins-expansion:moonlight",
+		"origins-expansion:moonlight_charging",
+		"origins-expansion:starcloak",
+		"origins-expansion:discharged",
+		"origins-expansion:searing_light"
+	],
+	"icon": "minecraft:quartz",
+	"impact": 2
+}

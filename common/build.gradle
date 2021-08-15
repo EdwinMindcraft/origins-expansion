@@ -11,6 +11,10 @@ java {
     withSourcesJar()
 }
 
+dependencies {
+    modApi group: 'com.github.EdwinMindcraft.origins-architectury', name: 'Origins-1.16.5', version: "${rootProject.origins_common_version}"
+}
+
 publishing {
     publications {
         mavenCommon(MavenPublication) {

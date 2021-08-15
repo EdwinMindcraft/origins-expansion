@@ -20,7 +20,8 @@ dependencies {
     // Remove the next line if you don't want to depend on the API
     modApi "me.shedaniel:architectury-forge:${rootProject.architectury_version}"
     modApi "me.shedaniel.cloth:cloth-config-forge:${rootProject.clothconfig_version}"
-    modApi "top.theillusivec4.caelus:caelus-forge:${rootProject.caelus_forge_version}"
+    //modApi "top.theillusivec4.caelus:caelus-forge:${rootProject.caelus_forge_version}"
+    modApi group: 'com.github.EdwinMindcraft.origins-architectury', name: 'Origins-1.16.5-forge', version: "${rootProject.origins_forge_version}"
 
     implementation(project(path: ":common")) {
         transitive = false

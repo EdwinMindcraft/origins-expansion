@@ -1,5 +1,5 @@
 plugins {
-    id "architectury-plugin" version "3.1-SNAPSHOT"
+    id "architectury-plugin" version "3.2-SNAPSHOT"
     id "forgified-fabric-loom" version "0.7.0-SNAPSHOT" apply false
 }
 
@@ -17,7 +17,6 @@ subprojects {
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
         mappings loom.officialMojangMappings()
-        modApi group: 'origins', name: 'Origins-1.16.5', version: '0.7.1', classifier: project.name
     }
 }
 
@@ -35,11 +34,8 @@ allprojects {
         maven { url 'https://maven.jamieswhiteshirt.com/libs-release/' }
         maven { url 'https://maven.shedaniel.me/' }
         maven { url 'https://maven.theillusivec4.top' }
-        maven { url 'https://ladysnake.jfrog.io/artifactory/mods' }
+        maven { url 'https://maven.terraformersmc.com/' }
         maven { url 'https://jitpack.io' }
-        flatDir {
-            dir rootProject.file('libs')
-        }
     }
 
     tasks.withType(JavaCompile) {

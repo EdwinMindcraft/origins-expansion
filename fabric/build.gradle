@@ -16,10 +16,11 @@ dependencies {
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "me.shedaniel:architectury-fabric:${rootProject.architectury_version}"
-    modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${rootProject.cca_version}"
+    modApi group: 'com.github.apace100', name: 'origins-fabric', version: "${rootProject.origins_fabric_version}"
+    /*modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${rootProject.cca_version}"
     modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${rootProject.cca_version}"
     modImplementation "com.jamieswhiteshirt:reach-entity-attributes:${rootProject.reach_version}"
-    modImplementation "com.github.adriantodt:FallFlyingLib:${rootProject.ffl_version}"
+    modImplementation "com.github.adriantodt:FallFlyingLib:${rootProject.ffl_version}"*/
     modApi("me.shedaniel.cloth:cloth-config-fabric:${rootProject.clothconfig_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
